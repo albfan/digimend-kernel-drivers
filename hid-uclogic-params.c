@@ -949,8 +949,7 @@ static int uclogic_params_huion_init(struct uclogic_params *params,
 
 			/* Link from pen sub-report */
 			p.pen.subreport_list[2].value = 0xf1;
-			p.pen.subreport_list[2].id =
-				UCLOGIC_RDESC_V2_FRAME_DIAL_ID;
+			p.pen.subreport_list[2].id = 0x101;
 
 			goto output;
 		}
